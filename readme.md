@@ -27,3 +27,8 @@ After you have added the Stylebot extension, follow these instructions...
 3) Click the stylebot icon and then Open Stylebot.
 4) Open the editor tab.
 5) Paste in my CSS.
+
+[Planet Navigation 1](./images/nav1.png)
+[Planet Navigation 2](./images/nav2.png)
+[Planet Navigation 3](./images/nav3.png)
+[Planet Navigation 4](./images/nav4.png)
