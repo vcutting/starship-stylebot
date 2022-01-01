@@ -1,0 +1,341 @@
+/* Allowing site to be scrollable  on smaller screens */
+#root>div {
+    text-align: center;
+    overflow: scroll;
+}
+#root>div>.landing-background {
+    position: relative;
+    margin: 0 auto;
+    height: 900px;
+    transform: none;
+    left: initial;
+    top: initial;
+}
+#root>div>.landing-background>.control-panel {
+    left: 0;
+}
+
+/* Make the ship countdown timer more visible and bigger */
+.starship-card div div {
+    color: #fff;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+/* Center the ship countdown timer */
+.starship-card>div {
+    margin: 0 auto
+}
+
+/* Make the claim button area bigger */
+div.claim {
+    width: 75px;
+    height: 30px;
+    line-height: 30px;
+    margin-top: -5px;
+    margin-left: -17px;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Make the cursor a pointer (hand) on some interactive items */
+.control-panel-menu .column {
+    cursor: default;
+}
+div.claim,
+.control-panel-menu .row .column img,
+.category-selector p,
+.asset-carousel-item,
+.button-wrapper>.button {
+    cursor: pointer;
+}
+
+/* Adding some crude CSS-only tooltips to the control panel menu */
+.control-panel-menu .row .column:after {
+    content: "";
+    position: absolute;
+    top: -28px;
+    left: -15px;
+    padding: 3px 5px;
+    background: #333;
+    color: #fff;
+    width: 100px;
+    z-index: 2;
+    border-radius: 3px;
+    display: none;
+}
+.control-panel-menu .row:nth-child(1) .column:nth-child(1):hover:after {
+    content: "Home";
+    display: block;
+}
+.control-panel-menu .row:nth-child(1) .column:nth-child(2):hover:after {
+    content: "My Ships/ Components";
+    display: block;
+}
+.control-panel-menu .row:nth-child(1) .column:nth-child(3):hover:after {
+    content: "Radar/Lanuch";
+    display: block;
+}
+.control-panel-menu .row:nth-child(2) .column:nth-child(1):hover:after {
+    content: "My Planets";
+    display: block;
+}
+.control-panel-menu .row:nth-child(2) .column:nth-child(2):hover:after {
+    content: "Chat";
+    display: block;
+}
+.control-panel-menu .row:nth-child(2) .column:nth-child(3):hover:after {
+    content: "? ? ?";
+    display: block;
+}
+.control-panel-menu .row:nth-child(3) .column:nth-child(2):hover:after {
+    content: "KYANITE";
+    display: block;
+}
+
+/* Reduce height of part selector carousel so horizontal scroll bar is visible to use */
+.nft-carousel {
+    height: 145px;
+}
+
+/* Narrower ship parts table */
+table.starship-part-list {
+    width: 210px;
+}
+
+/* More visiable carousel arrows */
+.carousel.carousel-slider .control-arrow,
+.carousel .control-arrow {
+    opacity: 1
+}
+
+/* Bigger carousel arrows */
+.carousel .control-next.control-arrow:before {
+    border-left-width: 15px;
+}
+.carousel .control-prev.control-arrow:before {
+    border-right-width: 15px;
+}
+.carousel.carousel-slider .control-arrow:before,
+.carousel .control-arrow:before {
+    border-top-width: 15px;
+    border-bottom-width: 15px;
+}
+
+/* Wider tooltips */
+.__react_component_tooltip {
+    border-radius: 5px;
+    width: 200px;
+}
+
+/* Make the starship action buttons better */
+.starship-card .send-button,
+.starship-card .send-spacestation-button {
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 14px;
+    border-radius: 5px;
+    color: white;
+    box-shadow: 0 1px 3px rgba(0,0,0,.5)
+}
+.starship-card .send-button:hover {
+    background: limegreen;
+}
+.starship-card .send-spacestation-button:hover {
+    background: hotpink;
+}
+
+/* Add a background to modals */
+.basic.modal.visible {
+    background: #333;
+    border-radius: 5px;
+}
+
+/* Increase the size of the chat box to be more usable */
+.str-chat.str-chat-channel {
+    position: absolute;
+    top: -400px;
+    margin-left: -30px;
+    height: 740px;
+    width: 750px;
+}
+.str-chat__main-panel {
+    padding: 0;
+}
+.str-chat__list  {
+    height: 590px;
+    flex: none;
+}
+.str-chat__input-flat {
+    background: #333;
+}
+
+/* Improving the sector selector */
+.sector-selector>.sector {
+    background-repeat: no-repeat;
+}
+.sector-selector>.sector>.sec:hover {
+    border: 1px solid lime
+}
+.sector-selector>.sector>.sec:hover:after {
+    color: white;
+    position: absolute;
+    font-size: 40px;
+    font-weight: bold;
+    transform: rotate(-45deg);
+    left: -50px;
+    bottom: -60px;
+}
+.sector-selector>.sector>.s24:hover:after {
+    content: "0";
+}
+.sector-selector>.sector>.s23:hover:after {
+    content: "1";
+}
+.sector-selector>.sector>.s22:hover:after {
+    content: "2";
+}
+.sector-selector>.sector>.s21:hover:after {
+    content: "3";
+}
+.sector-selector>.sector>.s20:hover:after {
+    content: "4";
+}
+.sector-selector>.sector>.s19:hover:after {
+    content: "5";
+}
+.sector-selector>.sector>.s18:hover:after {
+    content: "6";
+}
+.sector-selector>.sector>.s17:hover:after {
+    content: "7";
+}
+.sector-selector>.sector>.s16:hover:after {
+    content: "8";
+}
+.sector-selector>.sector>.s15:hover:after {
+    content: "9";
+}
+.sector-selector>.sector>.s14:hover:after {
+    content: "10";
+}
+.sector-selector>.sector>.s13:hover:after {
+    content: "11";
+}
+.sector-selector>.sector>.s12:hover:after {
+    content: "12";
+}
+.sector-selector>.sector>.s11:hover:after {
+    content: "13";
+}
+.sector-selector>.sector>.s10:hover:after {
+    content: "14";
+}
+.sector-selector>.sector>.s9:hover:after {
+    content: "15";
+}
+.sector-selector>.sector>.s8:hover:after {
+    content: "16";
+}
+.sector-selector>.sector>.s7:hover:after {
+    content: "17";
+}
+.sector-selector>.sector>.s6:hover:after {
+    content: "18";
+}
+.sector-selector>.sector>.s5:hover:after {
+    content: "19";
+}
+.sector-selector>.sector>.s4:hover:after {
+    content: "20";
+}
+.sector-selector>.sector>.s3:hover:after {
+    content: "21";
+}
+.sector-selector>.sector>.s2:hover:after {
+    content: "22";
+}
+.sector-selector>.sector>.s1:hover:after {
+    content: "23";
+}
+
+/* Improve the star-system selector carousel */
+.system-carousel .slider>.slide:after {
+    position: absolute;
+    color: white;
+    font-size: 100px;
+    font-weight:bold;
+    top: 50px;
+}
+.system-carousel .slider>.slide:nth-child(1):after {
+    content: "0";
+}
+.system-carousel .slider>.slide:nth-child(2):after {
+    content: "1";
+}
+.system-carousel .slider>.slide:nth-child(3):after {
+    content: "2";
+}
+.system-carousel .slider>.slide:nth-child(4):after {
+    content: "3";
+}
+.system-carousel .slider>.slide:nth-child(5):after {
+    content: "4";
+}
+.system-carousel .slider>.slide:nth-child(6):after {
+    content: "5";
+}
+.system-carousel .slider>.slide:nth-child(7):after {
+    content: "6";
+}
+.system-carousel .slider>.slide:nth-child(8):after {
+    content: "7";
+}
+.system-carousel .slider>.slide:nth-child(9):after {
+    content: "8";
+}
+.system-carousel .slider>.slide:nth-child(10):after {
+    content: "9";
+}
+.system-carousel .slider>.slide:nth-child(11):after {
+    content: "10";
+}
+.system-carousel .slider>.slide:nth-child(12):after {
+    content: "11";
+}
+.system-carousel .slider>.slide:nth-child(13):after {
+    content: "12";
+}
+.system-carousel .slider>.slide:nth-child(14):after {
+    content: "13";
+}
+.system-carousel .slider>.slide:nth-child(15):after {
+    content: "14";
+}
+.system-carousel .slider>.slide:nth-child(16):after {
+    content: "15";
+}
+.system-carousel .slider>.slide:nth-child(17):after {
+    content: "16";
+}
+.system-carousel .slider>.slide:nth-child(18):after {
+    content: "17";
+}
+.system-carousel .slider>.slide:nth-child(19):after {
+    content: "18";
+}
+.system-carousel .slider>.slide:nth-child(20):after {
+    content: "19";
+}
+.system-carousel .slider>.slide:nth-child(21):after {
+    content: "20";
+}
+.system-carousel .slider>.slide:nth-child(22):after {
+    content: "21";
+}
+.system-carousel .slider>.slide:nth-child(23):after {
+    content: "22";
+}
+.system-carousel .slider>.slide:nth-child(24):after {
+    content: "23";
+}
