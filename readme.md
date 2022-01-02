@@ -26,7 +26,11 @@ After you have added the Stylebot extension, follow these instructions...
 2) Pin the Stylebot extention, if you don't see the icon in Chrome's extension icons toolbar.
 3) Click the stylebot icon and then Open Stylebot.
 4) Open the editor tab.
-5) Paste in my CSS.
+5) Paste in my CSS from the `stylebot.css` file.
+
+---
+
+### Feature screenshots
 
 ![Planet Navigation 1](./images/nav1.jpg)
 ![Planet Navigation 2](./images/nav2.jpg)
